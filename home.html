@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>FUAS 2021</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="./CSS/home.css" title="home"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#consultar").click(function () {
+                $.get('https://mindicador.cl/api', function (data) {
+                    $("#result").append("<div><div>" + "1 UF " + "</div><div>" + "$" + data.uf.valor + "</div></div>");
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="home.html">FUAS<span class="logo_colour"> 2021</span></a></h1>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li class="selected"><a href="Home.html">Inicio</a></li>
+          <li><a href="formulario.html">Inscripción</a></li>
+          <li><a href="contact.html">Contactanos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        
+        <h3>Search</h3>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Enter keywords....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+      <div id="content">
+        <h1>Conoce nuestros beneficios</h1>
+        <table style="width:95%" id="infobecas">
+                <tr>
+                </tr>
+                <tr>
+                    <td>
+                                <ul>
+                                    <li>Gratuidad</li>
+                                    <li> Beca Excelencia Académica</li>
+                                    <li> Beca Bicentenario</li>
+                                    <li> Fondo Solidario de Crédito Universitario</li>
+                                    <li> Crédito con Garantía Estatal</li>
+                                    <li> Beca Juan Gómez Millas</li>
+                                    <li> Beca Juan Gómez Millas Extranjeros</li>
+                                    <li> Beca para estudiantes en situación de Discapacidad</li>
+                                    <li> Beca Nuevo Milenio</li>
+                                    <li> Beca Excelencia Técnica</li>
+                                    <li> Beca Puntaje Prueba de Transición para la Admisión Universitaria</li>
+                                    <li> Beca para Hijos de Profesionales de la Educación</li>
+                                    <li> Beca Articulación</li>
+                                    <li> Beca de Alimentación para la Educación Superior JUNAEB</li>
+                                    <li> Beca Continuidad de Estudios para Instituciones en Cierre</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+      </div>
+    </div>
+    <div id="footer">
+      Creado por alumnos de DuocUC.
+    </div>
+  </div>
+</body>
+</html>
