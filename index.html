@@ -13,9 +13,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-<div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Logotipo_oficial_del_Gobierno_de_Chile.png" alt=""
-                width=150px height="150">
         </div>
         <script type="text/javascript">
             function validar()
@@ -35,24 +32,27 @@
                 }
 
             }
-    
-    
         </script>
 
     <body>
-        <center>
-        <h1>Iniciar Sesión</h1>
+        <div class="cod-container">
+        <div class="form-header">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Logotipo_oficial_del_Gobierno_de_Chile.png" alt=""
+                width=150px height="150">
+        </div>
+<center>
+        <h1>FUAS 2021</h1>
         </center>
         <center>
             <table>
                 <tr>
-                    <td><label>Usuario</label></td> <td><input type="text" name="usuario" id="usuario"></td>
+                    <td><label>Usuario: </label></td> <td><input type="text" name="usuario" id="usuario"></td>
                 </tr>
                 <tr>
-                    <td><label>Correo</label></td> <td><input type="text" name="Email" id="Email"></td>
+                    <td><label>Email: </label></td> <td><input type="text" name="Email" id="Email"></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="button" name="btnVerifivaca" id="btnVerifica" onclick="validar()" value="verificar" style = "width: 100%"> </td>
+                    <td colspan="2"><input type="button" name="btnVerifivaca" id="btnVerifica" onclick="validar()" value="Ingresar" style = "width: 100%"> </td>
                 </tr>
             </table>
         </center>
